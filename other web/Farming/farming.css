@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(66, 66, 66);
+    font-family: Arial, sans-serif;
+    transition: 1s;
+}
+
+body.active {
+    background: #7a7a7a;
+    transition: 1s;
+}
+
+.an1 {
+    position: absolute;
+    background: red;
+    width: 100%;
+    height: 1px;
+    position: relative;
+    z-index: -2;
+}
+
+.an1::before,
+.an1::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /* background: linear-gradient(45deg, black, red, white, blue); */
+    background: linear-gradient(45deg, #e6fb04, #ff6600, #00ff66, #00ffff, #ff00ff, #ff0099, #6e0dd0, #ff3300, #099fff);
+    background-size: 600%;
+    width: calc(100% + 0px);
+    height: calc(100% + 1.5px);
+    animation: glowi 30s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -2;
+}
+
+@keyframes glowi {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.an1::after {
+    filter: blur(1px);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.heading.active {
+    background: grey;
+    transition: 1s;
+}
+
+.heading {
+    background: black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: whitesmoke;
+    transition: 1s;
+}
+
+.logo.active {
+    background: rgb(43, 43, 80);
+    transition: 1s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 85%;
+    width: 210px;
+    background: rgb(0, 0, 73);
+    border-radius: 0px 30px 30px 0px;
+    transition: 1s;
+}
+
+.logo p {
+    padding-left: 15px;
+    color: whitesmoke;
+    font-size: 1.7em;
+}
+
+#check {
+    display: none;
+    position: fixed;
+    left: 0;
+}
+
+.bars.active {
+    box-shadow: 0 8px 50px rgba(49, 49, 49, 0.8);
+}
+
+.bars {
+    position: fixed;
+    border-radius: 5px;
+    top: 10px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+    box-shadow: 0 8px 116px rgba(34, 34, 34, 0.8);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.bars:hover {
+    background: rgba(37, 30, 30, 0.459);
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.5);
+}
+
+.bars span {
+    top: 17.5px;
+    position: absolute;
+    padding: 0;
+    width: 25px;
+    height: 3px;
+    background: red;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+.bars span:nth-child(1) {
+    transform: translateY(-10px);
+    width: 25px;
+}
+
+.bars.active span:nth-child(1) {
+    width: 25px;
+    transform: translateY(0px) rotate(45deg);
+    transition-delay: 0.125s;
+}
+
+.bars span:nth-child(2) {
+    transform: translateY(10px);
+    width: 25px;
+}
+
+.bars.active span:nth-child(2) {
+    width: 25px;
+    transform: translateY(0px) rotate(315deg);
+    transition-delay: 0.25s;
+}
+
+.bars.active span:nth-child(3) {
+    transform: translateX(60px);
+    overflow: hidden;
+}
+
+
+/* animasi menu */
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    display: flex;
+    list-style: none;
+}
+
+.menu-item li {
+    padding: 10px;
+    cursor: pointer;
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+}
+
+.menu-item li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1em;
+}
+
+.menu-item li:hover {
+    background-color: blue;
+    transition: all 1s ease;
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.5);
+}
+
+#home {
+    padding-top: 60px;
+}
+
+.cover {
+    display: flex auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.cover img {
+    width: 420px;
+    height: 594px;
+    margin: 10px;
+}
+
+#about .about-content {
+    display: flex auto;
+    justify-content: center;
+    text-align: center;
+}
+
+#about .about-content img {
+    width: 420px;
+    height: 594px;
+    margin: 10px;
+}
+
+.halaman {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.halaman {
+    font-size: 20px;
+    background-color: #222;
+    justify-content: space-around;
+}
+
+.halaman a {
+    color: whitesmoke;
+    height: 25px;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 25px;
+    align-items: center;
+    text-align: center;
+}
+
+.halaman a:hover {
+    background: black;
+}
+
+#blog {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.562);
+    box-shadow: 0px 10px 25px rgba(255, 0, 0, 0.5);
+}
+
+.my-blog {
+    text-align: center;
+    color: whitesmoke;
+    display: block;
+}
+
+.my-blog p {
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.my-blog img {
+    padding: 5px;
+    height: 120px;
+    width: 120px;
+}
+
+.my-blog p a {
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: navy;
+    padding: 5px 40px 5px 40px;
+    border-radius: 2px;
+}
+
+.my-blog p a:hover {
+    transition: 1s ease;
+    background: black;
+    color: whitesmoke;
+    box-shadow: 5px 10px 25px rgba(255, 0, 0, 0.5);
+}
+
+
+/*indicator*/
+
+#lamp {
+    position: relative;
+    display: block;
+    right: 20px;
+    width: 42px;
+    height: 26px;
+    border-radius: 26px;
+    background: #fff;
+    transition: 1s;
+    cursor: pointer;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 -4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#lamp:hover {
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.486);
+}
+
+#lamp.active {
+    background: #222;
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1), inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.5), ;
+}
+
+#lamp .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    background: linear-gradient(to bottom, #444, #222);
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), inset 0 4px 4px rgba(255, 255, 255, 1), inset 0 -4px 4px rgba(255, 255, 255, 1), ;
+    transition: 1s;
+}
+
+#lamp.active .indicator {
+    left: 16px;
+    background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5), inset 0 4px 4px rgba(255, 255, 255, 0.2), inset 0 -4px 4px rgba(255, 255, 255, 0.2), ;
+}
+
+#foot {
+    height: 195px;
+    width: 100% auto;
+    color: whitesmoke;
+    position: relative;
+    bottom: 0;
+}
+
+.medsos-foot {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: rgb(32, 20, 20);
+}
+
+.med {
+    margin: 2px;
+}
+
+.med li {
+    list-style: none;
+}
+
+.med li img {
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+}
+
+.med a {
+    text-decoration: none;
+    background: orange;
+    font-size: 1em;
+    font-weight: 400;
+    color: whitesmoke;
+    padding: 3px 10px 3px 10px;
+    border-radius: 20px;
+}
+
+.copy {
+    display: flex;
+    background: black;
+    height: 15px;
+    width: 100% auto;
+    justify-content: space-around;
+}
+
+.copy p {
+    font-size: 0.8em;
+    color: whitesmoke;
+}
+
+
+/*indicator*/
+
+
+/*responsiv*/
+
+
+/*
+@media screen and (max-width:780px) {
+    header .menu {
+        display: none;
+    }
+}
+*/
+
+@media (max-width:1199px) {}
+
+@media (max-width:991px) {}
+
+@media (max-width:767px) {
+    .menu {
+        position: fixed;
+        right: -240px;
+    }
+    #check:checked~.menu-item {
+        right: 0;
+    }
+    .menu-item.active {
+        transition: 1s;
+        background: grey;
+    }
+    .menu-item {
+        position: fixed;
+        right: -240px;
+        top: 62px;
+        display: block;
+        background: black;
+        box-shadow: -2px 5px 15px rgba(255, 0, 0, 0.5);
+        width: 240px;
+        height: 100vh;
+        transition: 1s ease;
+    }
+    .menu-item li {
+        padding: 16px 0px 16px 0px;
+        text-align: center;
+        width: 100%;
+    }
+    .menu-item li:hover {
+        background-color: rgba(0, 0, 0, 0.288);
+        box-shadow: 0 10px 25px rgba(255, 0, 0, 0.5);
+    }
+    .menu-item li a {
+        width: 240px;
+    }
+    #lamp {
+        right: 60px;
+    }
+    .medsos-foot {
+        justify-content: center;
+    }
+}
+
+@media (max-width:575px) {}
+
+@media (min-width:1199px) {}
+
+@media (min-width:991px) {}
+
+@media (min-width:767px) {
+    .bars {
+        display: none;
+    }
+    .dropdown {
+        display: none;
+    }
+}
+
+@media (min-width:575px) {}
+
+
+/*responsiv*/

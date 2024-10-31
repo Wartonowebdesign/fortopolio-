@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html:5</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <ul class="logo-item">
+                <li><img src="../../icon/plant-leaf-with-white-details.png" alt=""></li>
+                <li>
+                    <h2>CodingThone</h2>
+                </li>
+            </ul>
+        </div>
+        <div class="menu">
+            <ul class="menu-item">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="sign"><a href="#">Sign Up</a></ul>
+        </div>
+        <div id="lamp">
+            <i class="indicator"></i>
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check">
+        </div>
+        <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </label>
+        <div class="dropdown">
+            <ul class="dropdown-menu">
+                <ul class="dropdown-menu-item">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portofolio">portofolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li class="sign"><a href="#">Sign Up</a></li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+    <section id="home">
+        <div class="buku">
+            <ul class="cover">
+                <p></p>
+            </ul>
+        </div>
+    </section>
+    <section id="about">
+        <div class="bab">
+            <h2>Belajar HTML Dasar : Mengenal Tag, Element, Atribut HTML
+            </h2><br>
+            <p>Setelah sebelumnya kita membahas tentang Pengenalan HTML, Text Editor. kini kita akan memasuki tutorial pengenalan dan penggunaan Tag, Element dan Atribut dalam HTMl. Ketiga pembahasan ini merupakan dasar dalam penulisan kode HTML atau dasar
+                dari seluruh tampilan halaman web yang ada di internet.
+            </p><br>
+            <h3>Tag HTML</h3><br>
+            <p>Tag merupakan kode yang digunakan untuk memperkenalkan pada web browser untuk apa text HTML yang ditulis. HTML membutuhkan cara memperkenalkan text yang ditulis didalamnya kepada web browser. baik text itu berupa list, paragraf, link dan sebagainya.
+                disinilah di gunakan tag. dalam penulisan tag, hampir semua menggunakan pembuka dan penutup tag, dimana objek yang di maksudkan berada diantara pembuka dan penutup tag. berikut penulisan tag yang digunakan dalam HTML
+            </p><br>
+            <table border="1">
+                <tr>
+                    <td>
+                        <p>
+
+                            < tag> Objek yang diisi
+                                < tag>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <p>Perbedaan antara tag pembuka dan tag penutup yaitu, pada tag pembuka diawali kurung sudut pembuka dan di akhiri dengan kurung sudut penutup (
+                <<span> > ), sedangkan pada tag penutup ,diawali dengan kurung sudut pembuka, backslash, dan diakhiri dengan penutup kurung sudut (
+                    < /<span> > ).
+            </p><br>
+            <p>jenis tag yang sering digunakan dalam html</p><br>
+            <p>berikut beberapa jenis tag yang akan sering anda jumpai kalo di web programing :
+
+            </p><br>
+
+            <table border="3">
+                <tr>
+                    <td>Tag</td>
+                    <td>Fungsi</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><</span>! <span>--</span><span> --</span>>
+                    </td>
+                    <td>Digunakan untuk memberi sebuah komentar atau keterangan</td>
+                </tr>
+                <tr>
+                    <td><span><</span>Html<span>></span></td>
+                    <td>digunakan untuk Mendefinisikan tipe document HTML5</td>
+                </tr>
+                <tr>
+                    <td>
+                        <<span>a>link<span><</span>/<span>a></td>
+                    <td>Mendefinisikan sebuah anchor, digunakan untuk saling menautkan antara satu dokumen HTML ke dokumen HTML yang lain (membuat link)</td>
+                </tr>
+                <tr>
+                    <td>< <span> b> .. <span><<span>/</span> b> </td>
+                    <td>membuat teks menjadi tebal</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> p> .. <span><<span>/</span> p> </td>
+                    <td>membuat pargraf</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> h1> .. <span><<span>/</span> h1> </td>
+                    <td>membuat heading satu</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> h2> .. <span><<span>/</span> h2> </td>
+                    <td>membuat heading dua</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> </span> body> </td>
+                    <td>mendefinisikan body/isi dokument html</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> </span> head> </td>
+                    </td>
+                    <td>mendefinisikan bagian kepala dokumen html</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> </span> title> </td>
+                    </td>
+                    <td>memdefiniskan judul halaman</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> </span> div></td>
+                    </td>
+                    <td>mendefinisikan halaman</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> </span> link></td>
+                    <td>mendefinisikan hubungan antar dokumen</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> </span> script></td>
+                    </td>
+                    <td>Mendefinisikan client-side script</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> </span> table></td>
+                    </td>
+                    <td>mendefinisikan table</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> </span> th></td>
+                    <td>Mendefinisikan sel header di dalam sebuah table</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> </span> td></td>
+                    <td>Mendefinisikan sel di dalam sebuah table</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> </span> tr></td>
+                    <td>Membuat baris di dalam sebuah table</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> </span> ul></td>
+                    <td>Mendefinisikan daftar dalam format bullet</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> </span> ul></td>
+                    <td>Fungsi</td>
+                </tr>
+                <tr>
+                    <td>
+                        < <span> </span> li></td>
+                    <td>mendefinisikan list</td>
+                </tr>
+            </table><br>
+            <h3>Element HTML</h3><br>
+            <p>Element pada HTML merupakan isi atau objek yang berada pada tag. maksudnya, isi yang ada diantara tag pembuka dan tag penutup di sebut dengan elemen misalkan :
+            </p><br>
+            <table>
+                <tr>
+                    <td>
+                        <span><</span>!</span>DOCTYPE <span> html></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span><</span>Html<span>></span></td>
+                </tr>
+                <tr>
+                    <td><span><</span>head<span>></span></td>
+                </tr>
+                <tr>
+                    <td><span><</span>title<span>></span><span><</span>title<span>></span></td>
+                </tr>
+                <tr>
+                    <td><span><</span>head<span>></span></td>
+                </tr>
+                <tr>
+                    <td><span><</span>body<span>></span></td>
+                </tr>
+                <tr>
+                    <td><span><</span>h2 align="center">Pengenalalan atribut HTML <span> <</span>/<span>h2></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span><</span>body<span>></span></td>
+                </tr>
+                <tr>
+                    <td><span><</span>Html<span>></span></td>
+                </tr>
+            </table><br>
+            <p>Perhatikan pada syntax di atas :</p><br>
+            <ul>
+                <li>
+                    <p><span>< h </span></2>> adalah tag heading 2</p>
+                </li>
+                <li>
+                    <p><b>align</b> adalah nama dari <b>atribut</b>
+                    </p>
+                </li>
+                <li>
+                    <p><b>center</b> adalah <b>nilai/value</b> dari <b>atribut</b></p>
+                </li>
+                <li>
+                    <p>“Pengenalan atribut <b>HTML</b> ” adalah <b>element</b> dari <b>tag h2</b></p>
+                </li>
+            </ul>
+            <p>Tidak semua tag ini membutuhkan atribut di dalamnya, namun bagi anda yang bergelut di web programing akan sering menjumpai tag yang didalamnya terdapat atribut.
+            </p><br>
+        </div>
+        <div class="halaman">
+            <a href="index.html">Previous Page</a>
+            <p>Page 2</p>
+            <a href="halaman3.html">Next Page</a>
+        </div><br>
+        <div class="sumber">
+            <p>Sumber : Ebook Belajar HTML & CSS Dasar<br>Diki Alfarabi Hadi | <a href="#">www.malasngoding.com</a></p>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="my-blog">
+            <p>Pertanian</p>
+            <img src="../../icon/plant-leaf-with-white-details.png" alt="">
+            <p><a href="farming.html" target="_blank">Visit</a></p>
+        </div>
+        <div class="my-blog">
+            <p>Design Graphic</p>
+            <img src="../../icon/pc-computer-with-monitor_icon-icons.com_56249.png" alt="">
+            <p><a href="../Design Graphic/design.html" target="_blank">Visit</a></p>
+        </div>
+        <div class="my-blog">
+            <p>Web Design</p>
+            <img src="../../icon/earth-globe.png" alt="">
+            <p><a href="../web design/index.html" target="_blank">Visit</a></p>
+        </div>
+        <div class="my-blog">
+            <p>Portofolio</p>
+            <img src="../../icon/user-shape.png" alt="">
+            <p><a href="../../index.html" target="_blank">Visit</a></p>
+        </div>
+    </section>
+    <section id="contact ">
+        <div class="contact-item">
+            <div class="contact-item-me">
+                <ul class="contact-medsos">
+                    <li><img src="../../medsos/facebook-128x128-189794.png" alt=""></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61561891547134&mibextid=ZbWKwL">Add & Follow</a></li>
+                </ul>
+                <ul class="contact-medsos">
+                    <li><img src="../../medsos//whatsapp-128x128-189795.png" alt=""></li>
+                    <li><a href="http://wa.link/rcay7u">Telp/Chat Whatapp</a></li>
+                </ul>
+                <ul class="contact-medsos">
+                    <li><img src="../../medsos//youtube-128x128-189777.png" alt=""></li>
+                    <li><a href="https://www.youtube.com/@WartonoGame">Come To My Chanel</a></li>
+                </ul>
+            </div>
+            <div class="footer">
+                <li>
+                    <h4>Email : gamewartono@gmail.com</h4>
+                </li>
+                <li>
+                    <p>Copyright</p>/
+                    <p>2024</p>
+                </li>
+            </div>
+        </div>
+    </section>
+    <script>
+        let menutoggle = document.querySelector('.toggle');
+        menutoggle.onclick = function() {
+            menutoggle.classList.toggle('active')
+        }
+        const body = document.querySelector('body')
+        const lamp = document.getElementById('lamp');
+        lamp.onclick = function() {
+            lamp.classList.toggle('active');
+            body.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="farming.css">
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <nav class="logo">
+                <p>CodingThone</p>
+            </nav>
+            <nav class="menu">
+                <input type="checkbox" id="check">
+                <label for="check"><div class="bars"><span></span><span></span><span></span></div></label>
+                <ul class="menu-item">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="lamp">
+                <i class="indicator"></i>
+            </nav>
+        </div>
+        <nav class="an1">
+        </nav>
+    </header>
+    <section id="home">
+        <div class="cover">
+            <img src="2020 Ilmu Tanah_001.png">
+            <img src="2020 Ilmu Tanah_002.png">
+            <img src="2020 Ilmu Tanah_003.png">
+            <img src="2020 Ilmu Tanah_004.png">
+            <img src="2020 Ilmu Tanah_005.png">
+            <img src="2020 Ilmu Tanah_008.png">
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-content">
+            <img src="2020 Ilmu Tanah_010.png">
+            <img src="2020 Ilmu Tanah_011.png">
+            <img src="2020 Ilmu Tanah_012.png">
+            <img src="2020 Ilmu Tanah_013.png">
+            <img src="2020 Ilmu Tanah_014.png">
+            <img src="2020 Ilmu Tanah_015.png">
+            <img src="2020 Ilmu Tanah_016.png">
+            <img src="2020 Ilmu Tanah_017.png">
+        </div>
+    </section>
+    <section id="services">
+        <div class="creator">
+            <h2>Penghubung Baca</h2>
+        </div>
+        <div class="halaman">
+            <a href="farming.html">Sebelumnya</a>
+            <p>Halaman 1</p>
+            <a href="farming 2.html">Selanjutnya</a>
+        </div>
+        <div class="Sumber">
+            <p>
+                Edisi ke-2 Copy Right © 2020, Global Madani Press Edisi ke-1 © 2012, Global Madani Press
+            </p>
+            <p>Jl. Kavling Raya XIV No. 1, Pramuka, Rajabasa, Bandar Lampung 35144, Indonesia
+
+            </p>
+            <p>Website : www.globalmadani.sch.id
+            </p>
+            <p>E-mail : ypgm@globalmadani.sch.id </p>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="my-blog">
+            <p>Pertanian</p>
+            <img src="../../icon/plant-leaf-with-white-details.png" alt="">
+            <p><a href="farming.html" target="_blank">Visit</a></p>
+        </div>
+        <div class="my-blog">
+            <p>Design Graphic</p>
+            <img src="../../icon/pc-computer-with-monitor_icon-icons.com_56249.png" alt="">
+            <p><a href="../Design Graphic/design.html" target="_blank">Visit</a></p>
+        </div>
+        <div class="my-blog">
+            <p>Web Design</p>
+            <img src="../../icon/earth-globe.png" alt="">
+            <p><a href="../web design/index.html" target="_blank">Visit</a></p>
+        </div>
+        <div class="my-blog">
+            <p>Portofolio</p>
+            <img src="../../icon/user-shape.png" alt="">
+            <p><a href="../../index.html" target="_blank">Visit</a></p>
+        </div>
+    </section>
+    <section id="foot">
+        <div class="medsos-foot">
+            <ul class="med">
+                <li><img src="../../medsos/facebook-128x128-189796.png" alt=""></li>
+                <a href="https://wa.link/rcay7u" target="_blank">Telp/Chat</a>
+            </ul>
+            <ul class="med">
+                <li><img src="../../medsos/whatsapp-128x128-189795.png" alt=""></li>
+                <a href="https://www.facebook.com/profile.php?id=61561891547134&mibextid=ZbWKwL" target="_blank">Facebook</a>
+            </ul>
+            <ul class="med">
+                <li><img src="../../icon/telephone-symbol-button.png" alt=""></li>
+                <a href="http://t.me/Thone95" target="_blank">Telegram</a>
+            </ul>
+            <ul class="med">
+                <li><img src="../../medsos/youtube-128x128-189778.png" alt=""></li>
+                <a href="https://www.youtube.com/@WartonoGame" target="_blank">Visite Chanel</a>
+            </ul>
+        </div>
+        <din class="copy">
+            <p>Email=gamewartono@gmail.com</p><span></span>
+            <p>Copy&<i class="fa fa-copyright"></i>2024</p>
+        </din>
+    </section>
+
+    <script>
+        const logo = document.querySelector('.logo')
+        const menuItem = document.querySelector('.menu-item')
+        const heading = document.querySelector('.heading')
+        const body = document.querySelector('body')
+        const lamp = document.getElementById('lamp');
+        lamp.onclick = function() {
+            lamp.classList.toggle('active');
+            body.classList.toggle('active');
+            heading.classList.toggle('active');
+            menuItem.classList.toggle('active');
+            logo.classList.toggle('active');
+        }
+        let bars = document.querySelector('.bars');
+        bars.onclick = function() {
+            bars.classList.toggle('active')
+        }
+    </script>
+</body>
+
+</html>
