@@ -308,9 +308,19 @@ body.active {
     .dropdown {
         display: none;
     }
+    .my-blog img{
+        padding: 5px;
+        height: 90px;
+        width: 90px;
+    }
 }
 
-@media (min-width:575px) {}
+@media (min-width:365px) {
+    #blog{
+        display: block;
+        flex-direction: column;
+    }
+}
 
 
 /*responsiv*/
