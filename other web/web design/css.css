@@ -313,6 +313,10 @@ body.active {
         height: 90px;
         width: 90px;
     }
+    #blog{
+        display: block;
+        flex-direction: column;
+    }
 }
 
 @media (min-width:575px) {
