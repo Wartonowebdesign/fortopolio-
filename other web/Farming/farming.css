@@ -466,7 +466,7 @@ header {
     }
 }
 
-@media (max-width:365px) {
+@media (max-width:575px) {
     #blog{
         display: block;
         flex-direction: column;
