@@ -464,6 +464,10 @@ header {
         height: 90px;
         width: 90px;
     }
+    #blog{
+        display: block;
+        flex-direction: column;
+    }
 }
 
 @media (max-width:575px) {
