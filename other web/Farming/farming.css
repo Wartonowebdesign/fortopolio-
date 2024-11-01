@@ -459,9 +459,19 @@ header {
     .medsos-foot {
         justify-content: center;
     }
+    .my-blog img{
+        padding: 5px;
+        height: 90px;
+        width: 90px;
+    }
 }
 
-@media (max-width:575px) {}
+@media (max-width:365px) {
+    #blog{
+        display: block;
+        flex-direction: column;
+    }
+}
 
 @media (min-width:1199px) {}
 
