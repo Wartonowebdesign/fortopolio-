@@ -315,7 +315,7 @@ body.active {
     }
 }
 
-@media (min-width:365px) {
+@media (min-width:575px) {
     #blog{
         display: block;
         flex-direction: column;
